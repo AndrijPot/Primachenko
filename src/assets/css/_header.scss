@@ -236,6 +236,8 @@ header{
    
    
    .header__logo{
+    position: relative;
+    z-index: 7; 
       a{
          display: flex;
          align-items: center;
@@ -357,4 +359,17 @@ header{
       }
 
    }
+}
+
+@media (min-width: 2000px){
+  header{
+    .header__nav{
+      ul{
+        gap: 80px;
+        .nav_links{
+          font-size: 25px;
+        }
+      }
+    }
+  }
 }

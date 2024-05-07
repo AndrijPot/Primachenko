@@ -17,12 +17,20 @@
 @import './footer';
 
 .page-wrapper{
-  padding: 190px 50px 0;
+  min-height: 85%;
+  padding: 190px 80px 0;
+  display: flex;
+  justify-content: center;
   @media (max-width: 1000px){
-    padding-top: 170px;
+    padding: 170px 80px 0;
   }
   @media (max-width: 770px){
-    padding-top: 130px;
+    padding: 130px 80px 0;
+
+  }
+  @media (max-width: 500px){
+    padding: 130px 55px 0;
+    
   }
 }
 

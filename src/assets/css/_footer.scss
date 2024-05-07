@@ -8,6 +8,7 @@ footer {
  margin: 60px 0 0 0;
  padding: 32px 0 50px;
  font-family: "Montserrat", sans-serif;
+
  .footer{
   display: flex;
   justify-content: space-around;
@@ -73,6 +74,14 @@ footer {
   }
 }
 }
+// @media (min-height: 750px) and (min-width: 800px){
+//   footer{
+//    position: absolute;
+//     bottom: -31px;
+//     margin: 20px 0 0 0;
+//   }
+// }
+
    @media (max-width: 1000px){
     footer{
       .footer{
@@ -117,6 +126,20 @@ footer {
           align-items: center;
           p{
             font-size: 12px;
+          }
+        }
+        .history-block{
+          .history__privacy{
+            font-size: 14px;
+          }
+          .history-logo{
+            img{
+              width: 35px;
+              height: 35px;
+            }
+            p{
+              font-size: 14px;
+            }
           }
         }
       }

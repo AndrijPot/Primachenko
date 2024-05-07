@@ -1,1 +1,212 @@
+.biography{
+    .bio_info_main{
+        display: flex;
+       
+        gap: 20px;
+       
+        h1{
+            font-family: "Jost", sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 52px;
+            margin: 0 0 16px 0;
+        }
+        .bio_text__margin{
+            margin: 0 0 25px 0;
+        }
+    }
+    
+    .bio_info{
+        max-width: 1100px;
+        margin: 0 0 28px 0;
+       
+        .bio_text{
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #636363;
+           
+        }
+        .bio_info__title{
+            font-weight: 600;
+            font-size: 21px;
+            margin: 0 0 10px 0;
+        }
+      
+        .bio_pic__float{
+            float: right;
+            margin: 0 0 5px 20px;
+        }
+        .bio_pic__float_mob{
+            display: none;
+        }
+    }
+    
+}
 
+@media (max-width: 768px){
+    .biography{
+        .bio_info_main{
+            align-items: center;
+            flex-direction: column-reverse;
+             gap: 20px;
+            
+             h1{
+               
+                 font-size: 28px;
+                
+                
+                 margin: 0 0 16px 0;
+             }
+             .bio_text__margin{
+                 margin: 0 0 25px 0;
+             }
+             img{
+                 width: 200px;
+               
+             }
+         }
+    
+        .bio_info{
+           
+            margin: 0 0 28px 0;
+           
+            .bio_text{
+              
+                font-size: 14px;
+                
+               
+                
+            }
+            .bio_info__title{
+               
+                font-size: 18px;
+                margin: 0 0 10px 0;
+            }
+          
+            .bio_pic__float{
+                width: 250px;
+                margin: 0 0 5px 20px;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 620px){
+    .biography{
+    
+        .bio_info{
+           
+        
+          
+            .bio_pic__float{
+                display: none;
+            }
+            .bio_pic__float_mob{
+                display: block;
+              margin: 0 auto 20px;
+
+            }
+        }
+       
+    }
+}
+
+@media (max-width: 500px){
+    .biography{
+    
+        .bio_info_main{
+          
+            h1{
+              
+                font-size: 24px;
+               
+               
+                margin: 0 0 16px 0;
+            }
+            .bio_text__margin{
+                margin: 0 0 25px 0;
+            }
+            img{
+                width: 150px;
+              
+            }
+        }
+
+        .bio_info{
+           
+            margin: 0 0 28px 0;
+           
+            .bio_text{
+              
+                font-size: 12px;
+                
+               
+                
+            }
+            .bio_info__title{
+               
+                font-size: 16px;
+                margin: 0 0 10px 0;
+            }
+          
+            .bio_pic__float, .bio_pic__float_mob{
+                width: 220px;
+               
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 2000px){
+    .biography{
+        .bio_info_main{
+            
+           
+            gap: 40px;
+           
+            h1{
+                
+                font-size: 56px;
+               
+                margin: 0 0 25px 0;
+            }
+            .bio_text__margin{
+                margin: 0 0 35px 0;
+            }
+            img{
+                width: 400px;
+            }
+        }
+        
+        .bio_info{
+            max-width: 1500px;
+            margin: 0 0 28px 0;
+           
+            .bio_text{
+                font-size: 27px;
+                line-height: 54px;
+            }
+            .bio_info__title{
+                font-weight: 600;
+                font-size: 34px;
+                margin: 0 0 16px 0;
+            }
+          
+            .bio_pic__float{
+                float: right;
+                margin: 0 0 8px 25px;
+                width: 600px;
+               
+            }
+            .bio_pic__float_mob{
+                display: none;
+            }
+        }
+        
+    }
+}
