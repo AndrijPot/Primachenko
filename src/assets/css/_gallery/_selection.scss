@@ -1,0 +1,184 @@
+.gallery{
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+        column-gap: 28px;
+        justify-content: center;
+        align-items: center;
+        .gallery-picture-block{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            justify-content: center;
+            align-items: center;
+           
+            img{
+                transition: all .5s ease-in-out;
+                max-height: 200px;
+               &:hover{
+                transform: scale(1.05);
+                margin: 0 0 10px 0;
+               }
+              
+            }
+            
+           
+            .picture_name{
+                font-family: "Montserrat", sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21.94px;
+                color: #1D1E26;
+                text-align: center;
+            }
+            
+            .picture_author{
+                font-family: "Montserrat", sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19.5px;
+                color: #1D1E26;
+
+            }
+        }
+    }
+    .gallery-visible{
+        margin: 0 0 60px 0;
+    }
+
+    .gallery-hidden{
+        display: none;
+    }
+    .gallery_button{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 166px;
+        height: 49px;
+        border-radius: 15px;
+        border: 1px solid #447EF2;
+        margin: 0 auto;
+        
+        color: #447EF2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        &:hover{
+        background: #447EF2;
+        color: #fff;
+        transform: scale(1.1);
+        }
+        input{
+            visibility: hidden;
+            cursor: pointer;
+            position: absolute;
+            width: 166px;
+            height: 49px;
+        }
+
+    }
+}
+
+@media (max-width: 1100px){
+.gallery{
+    .gallery-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+}
+@media (max-width: 770px){
+    .gallery{
+        .gallery-grid{
+         .gallery-picture-block{
+            img{
+                max-height: 140px;
+            }
+            .picture_name{
+                font-size: 16px;
+            }
+            .picture_author{
+                font-size: 14px;
+            }
+         }
+        }
+    }
+}
+@media (max-width: 600px){
+    .gallery{
+        .gallery-grid{
+            grid-template-columns: repeat(1, 1fr);
+         .gallery-picture-block{
+            img{
+                max-height: 180px;
+            }
+            .picture_name{
+                font-size: 17px;
+            }
+            .picture_author{
+                font-size: 15px;
+            }
+         }
+        }
+    }
+}
+@media (max-width: 440px){
+    .gallery{
+        .gallery-grid{
+            grid-template-columns: repeat(1, 1fr);
+         .gallery-picture-block{
+            img{
+                max-height: 150px;
+            }
+            .picture_name{
+                font-size: 16px;
+            }
+            .picture_author{
+                font-size: 14px;
+            }
+         }
+        }
+        .gallery_button{
+            width: 135px;
+            height: 40px;
+            font-size: 15px;
+            input{
+                width: 135px;
+                height: 40px;
+            }
+        }
+    }
+}
+@media (min-width: 2000px){
+    .gallery{
+        .gallery-grid{
+        
+         .gallery-picture-block{
+            gap: 10px;
+            img{
+                min-height: 370px;
+            }
+            .picture_name{
+                font-size: 26px;
+                line-height: 35px;
+            }
+            .picture_author{
+                font-size: 22px;
+            }
+         }
+        }
+        .gallery_button{
+            width: 435px;
+            height: 80px;
+            font-size: 30px;
+            input{
+                width: 435px;
+            height: 80px;
+            }
+        }
+    }
+}
