@@ -1,7 +1,6 @@
 .biography{
     .bio_info_main{
         display: flex;
-       
         gap: 20px;
        
         h1{
@@ -15,6 +14,11 @@
             margin: 0 0 25px 0;
         }
     }
+    .bio_pic__float{
+        display: flex;
+        justify-content: center;
+        margin: 20px auto; 
+    }
     
     .bio_info{
         max-width: 1100px;
@@ -23,10 +27,9 @@
         .bio_text{
             font-family: "Montserrat", sans-serif;
             font-size: 16px;
-            font-weight: 400;
             line-height: 24px;
             text-align: left;
-            color: #636363;
+            color: $info-color;
            
         }
         .bio_info__title{
@@ -35,10 +38,7 @@
             margin: 0 0 10px 0;
         }
       
-        .bio_pic__float{
-            float: right;
-            margin: 7px 0 7px 20px;
-        }
+        
         .bio_pic__float_mob{
             display: none;
         }
@@ -54,10 +54,7 @@
              gap: 20px;
             
              h1{
-               
                  font-size: 28px;
-                
-                
                  margin: 0 0 16px 0;
              }
              .bio_text__margin{
@@ -65,23 +62,16 @@
              }
              img{
                  width: 200px;
-               
              }
          }
     
         .bio_info{
-           
             margin: 0 0 28px 0;
            
             .bio_text{
-              
                 font-size: 14px;
-                
-               
-                
             }
             .bio_info__title{
-               
                 font-size: 18px;
                 margin: 0 0 10px 0;
             }
@@ -97,34 +87,23 @@
 
 @media (max-width: 620px){
     .biography{
-    
         .bio_info{
-           
-        
-          
             .bio_pic__float{
                 display: none;
             }
             .bio_pic__float_mob{
                 display: block;
               margin: 0 auto 28px;
-
             }
         }
-       
     }
 }
 
 @media (max-width: 500px){
     .biography{
-    
         .bio_info_main{
-          
             h1{
-              
                 font-size: 24px;
-               
-               
                 margin: 0 0 16px 0;
             }
             .bio_text__margin{
@@ -132,47 +111,33 @@
             }
             img{
                 width: 150px;
-              
             }
         }
 
         .bio_info{
-           
             margin: 0 0 28px 0;
-           
             .bio_text{
-              
                 font-size: 12px;
-                
-               
-                
             }
             .bio_info__title{
-               
                 font-size: 16px;
                 margin: 0 0 10px 0;
             }
           
             .bio_pic__float, .bio_pic__float_mob{
                 width: 220px;
-               
             }
         }
-        
     }
 }
 
 @media (min-width: 2000px){
     .biography{
         .bio_info_main{
-            
-           
             gap: 40px;
            
             h1{
-                
                 font-size: 56px;
-               
                 margin: 0 0 25px 0;
             }
             .bio_text__margin{
@@ -207,6 +172,5 @@
                 display: none;
             }
         }
-        
     }
 }

@@ -26,26 +26,24 @@
         font-weight: 400;
         line-height: 21.94px;
         text-align: center;
-        color: #636363;
+        color: $info-color;
         max-width: 815px;
         margin: 0 0 55px 0;
     }
     .home__button{
         width: 194px;
         height: 57px;
-       
-        
+
         border-radius: 15px;
-        background: #447EF2;
-        color: #fff;
+        background: $blue-color;
+        color: $white-color;
         font-size: 17px;
         font-family: "Montserrat", sans-serif;
         text-align: center;
         line-height: 57px;
-        transition: all .3s ;
+        transition: all $transition-time ;
         &:hover{
-            background: #2861d3;
-           
+            background: $blue-color;
             transform: scale(1.03);
         }
     } 
@@ -53,7 +51,6 @@
 
 @media (max-width: 1000px) {
     .home-container{
-        
         margin: 36px 0 100px;
         h1{
             font-size: 45px;
@@ -78,7 +75,6 @@
 
 @media (max-width: 600px) {
     .home-container{
-        
         margin: 16px 0 100px;
         h1{
             font-size: 35px;
@@ -141,6 +137,29 @@
             height: 30px;
             font-size: 10px;
             line-height: 30px;
+        }
+    }
+}
+
+@media (min-width: 2000px){
+    .home-container{
+        .home__title{
+            font-size: 95px;
+        }
+        .home__subtitle{
+            font-size: 67px;
+            margin: 66px 0;
+        }
+        .home__info{
+            font-size: 34px;
+            line-height: 50px;
+            max-width: 1100px;
+        }
+        .home__button{
+            width: 394px;
+            height: 75px;
+            font-size: 27px;
+            line-height: 75px;
         }
     }
 }

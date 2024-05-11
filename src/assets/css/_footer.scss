@@ -1,7 +1,7 @@
 footer {
- background: #1D1E26;
+ background: $dark-blue-color;
 
-  position: relative;
+position: relative;
  bottom: 0;
  z-index: 3;
  width: 100%;
@@ -19,7 +19,7 @@ footer {
     flex-direction: column;
    
     p{
-      color: #fff;
+      color: $white-color;
       font-size: 16px;
     }
     .footer__titles{
@@ -36,16 +36,16 @@ footer {
       display: flex;
       align-items: center;
       gap: 5px;
-      p{
+      .history-logo_text{
         font-family: "Jost", sans-serif;
         font-size: 18px;
         font-weight: 700;
-        color: #fff;
+        color: $white-color;
       }
     }
     .history__privacy{
       font-size: 16px;
-      color: #797979;
+      color: $privacy-color;
     }
   }
 
@@ -56,7 +56,7 @@ footer {
       gap: 20px;
       
       a{
-        background: #fff;
+        background: $white-color;
         font-size: 20px;
         border-radius: 50%;
         display: flex;
@@ -64,29 +64,17 @@ footer {
         align-items: center;
         width: 30px;
         height: 30px;
-        .fa-instagram{
-          
-        }
-        .fa-facebook-f{
-         
-        }
       }
     }
   }
 }
 }
-// @media (min-height: 750px) and (min-width: 800px){
-//   footer{
-//    position: absolute;
-//     bottom: -31px;
-//     margin: 20px 0 0 0;
-//   }
-// }
+
+
 
    @media (max-width: 1000px){
     footer{
       .footer{
-       
         .history-block, .contacts-block, .address-block, .social-block{
           p{
             font-size: 14px;
@@ -126,7 +114,6 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
        
-  
         gap: 50px;
         .history-block, .contacts-block, .address-block, .social-block{
           align-items: center;
@@ -137,6 +124,7 @@ footer {
         .history-block{
           .history__privacy{
             font-size: 14px;
+            text-align: center;
           }
           .history-logo{
             img{
@@ -151,3 +139,62 @@ footer {
       }
     }
    }
+
+   
+@media (min-width: 2000px){
+  footer{
+    .footer{
+      .history-block{
+        .history-logo{
+          gap: 15px;
+          img{
+            width: 80px;
+          }
+          .history-logo_text{
+            font-size: 30px;
+          
+          } 
+        }
+        .history__privacy{
+          font-size: 26px;
+        }
+      }
+      .history-block, .contacts-block, .address-block, .social-block{
+     
+        p{
+          font-size: 23px;
+        }
+        .footer__titles{
+          margin: 0 0 20px 0;
+        }
+        .contacts__num, .address__str{
+          margin: 0 0 12px 0;
+        }
+      }
+
+      .social-block{
+        .social-logos{
+          gap: 40px;
+          
+          a{
+            background: $white-color;
+            font-size: 32px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-height: 1550px){
+  footer{
+  bottom: -30px;
+  }
+}

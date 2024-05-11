@@ -8,7 +8,7 @@
    <meta name="description" content="">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" type="text/css" href="assets/css/app.min.css">
-   <link rel="icon" href="./assets/img/Home_img/header/SH.png" type="image/x-icon">
+   <link rel="icon" href="./assets/img/Home_img/header/logo.png" type="image/x-icon">
 </head>
 
 <body class="is-home" >
@@ -23,10 +23,10 @@
    </div>
    <nav class="header__nav">
       <ul>
-         <li class="nav_links"><a class="nav_link_home" href="index.html">Home</a></li>
-         <li class="nav_links"><a class="nav_link_biography" href="biography.html">Biography</a></li>
-         <li class="nav_links"><a class="nav_link_gallery" href="gallery.html">Gallery</a></li>
-         <li class="nav_links"><a class="nav_link_attractions" href="attractions.html">Аttractions</a></li>
+         <li class="nav_links"><a class="nav_link_home translate" href="index.html" data-en="Home" data-uk="Головна">Home</a></li>
+         <li class="nav_links"><a class="nav_link_biography translate" href="biography.html" data-en="Biography" data-uk="Біографія">Biography</a></li>
+         <li class="nav_links"><a class="nav_link_gallery translate" href="gallery.html" data-en="Gallery" data-uk="Галерея">Gallery</a></li>
+         <li class="nav_links"><a class="nav_link_attractions translate" href="attractions.html" data-en="Аttractions" data-uk="Винагороди">Аttractions</a></li>
       </ul>
    </nav>
    <!-- Burger -->
@@ -41,10 +41,10 @@
           <div class="menu-items">
            
             <ul class="burger-list">
-              <li class="burger-menu__item"><a class="burger_link_home" href="index.html">Home</a></li>
-              <li class="burger-menu__item"><a class="burger_link_biography" href="biography.html">Biography</a></li>
-              <li class="burger-menu__item"><a class="burger_link_gallery" href="gallery.html">Gallery</a></li>
-              <li class="burger-menu__item"><a class="burger_link_attractions" href="attractions.html">Аttractions</a></li>
+              <li class="burger-menu__item"><a class="burger_link_home translate" href="index.html" data-en="Home" data-uk="Головна">Home</a></li>
+              <li class="burger-menu__item"><a class="burger_link_biography translate" href="biography.html" data-en="Biography" data-uk="Біографія">Biography</a></li>
+              <li class="burger-menu__item"><a class="burger_link_gallery translate" href="gallery.html" data-en="Gallery" data-uk="Галерея">Gallery</a></li>
+              <li class="burger-menu__item"><a class="burger_link_attractions translate" href="attractions.html" data-en="Аttractions" data-uk="Винагороди">Аttractions</a></li>
             </ul>
            
             <div class="burger__footer">
@@ -61,48 +61,56 @@
 
 
    <div class="page-wrapper" id="pageWrapper">
-      <div class="home-container">
-    <h1 class="home__title">Maria Primachenko</h1>
-    <h2 class="home__subtitle">Ukrainian folk artist</h2>
-    <p class="home__info">This site is dedicated to the Ukrainian folk writer. Here you will find information about her: her paintings, awards she received and everything else from the life of the artist</p>
-    <a class="home__button" href="Biography.html">Go to view</a>
-</div>
+      <section class="home-container">
+    <h1 class="home__title translate" data-en="Maria Primachenko" data-uk="Марія Примаченко">Maria Primachenko</h1>
+    <h2 class="home__subtitle translate" data-en="Ukrainian folk artist" data-uk="Українська народна художниця">Ukrainian folk artist</h2>
+    <p class="home__info translate" 
+    data-en=" This site is dedicated to the Ukrainian folk writer. Here you will find information about her: her paintings, awards she received and everything else from the life of the artist" 
+    data-uk=" Цей сайт присвячений українській народній письменниці. Тут ви знайдете інформацію про неї: її картини, нагороди, які вона отримала та все інше з життя мисткині">
+        This site is dedicated to the Ukrainian folk writer. Here you will find information about her: her paintings, awards she received and everything else from the life of the artist
+    </p>
+    <a class="home__button translate" href="Biography.html"
+    data-en="Go to view" 
+    data-uk="Переглянути"> 
+        Go to view</a>
+    <button id="toggleButton">Змінити мову</button>
+</section>
       <img class="left-bg" src="./assets/img/blue_part.png" alt="" >
 <img class="right-bg" src="./assets/img/yellow_part.png" alt="" >
    </div>
    <footer>
    <div class="footer">
     <div class="history-block">
+        <!-- Logo -->
         <div class="history-logo">
             <img src="./assets/img/Home_img/header/logo.png" alt="">
-            <p translate="no">History</p>
+            <p class="history-logo_text" translate="no">History</p>
         </div>
-        <p class="history__privacy">Privacy & Terms</p>
+        <p class="history__privacy translate" data-en="Privacy & Terms" data-uk="Конфіденційність та умови">Privacy & Terms</p>
        
     </div>
+    <!-- Contacts -->
     <div class="contacts-block">
-        <p class="contacts__title footer__titles">CONTACTS</p>
+        <p class="contacts__title footer__titles translate"data-en="CONTACTS" data-uk="Контакти">CONTACTS</p>
         <p class="contacts__num contacts__text">+380729834812</p>
         <p class="contacts__mail contacts__text">ukhistory@gmail.com</p>
     </div>
+    <!-- Address -->
     <div class="address-block">
-        <p class="address__title footer__titles">ADDRESS</p>
+        <p class="address__title footer__titles translate" data-en="ADDRESS" data-uk="Адреса">ADDRESS</p>
         <p class="address__str address__text">str. Kreshchatyk 49 </p>
         <p class="address__text">ukhistory@gmail.com</p>
     </div>
+    <!-- Social -->
     <div class="social-block">
-        <p class="social__title footer__titles">SOCIAL NETWORKS</p>
+        <p class="social__title footer__titles translate" data-en="SOCIAL NETWORKS" data-uk="Соціальні мережі">SOCIAL NETWORKS</p>
         <div class="social-logos">
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
-          
-          
-           
         </div>
     </div>
    </div>
-
 </footer>
 
 

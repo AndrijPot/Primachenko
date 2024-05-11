@@ -10,7 +10,7 @@ header{
    width: 100%;
 
    z-index: 5;
-   background: #fff;
+   background: $white-color;
 
     .navbar {
       min-width: 100%;
@@ -102,14 +102,14 @@ header{
         &.active {
           transform: translate(0);
           animation: menu-bg .5s ease-in-out; // Apply the animation when active
-          background-color: #fff; // Set the target background color
+          background-color: $white-color; // Set the target background color
         }
         @keyframes menu-bg {
           0% {
             background: transparent;
           }
           100% {
-            background: #fff;
+            background: $white-color;
           }
         }
 
@@ -128,7 +128,6 @@ header{
               font-family: DM Sans;
               font-size: 22px;
               font-style: normal;
-              font-weight: 400;
               line-height: 26px;
               
             }
@@ -150,7 +149,7 @@ header{
                   transform: translateX(-50%);
                   right: 0;
                   text-align: center;
-                  background: #000;
+                  background: $black-color;
                }
             }
            
@@ -228,12 +227,9 @@ header{
         font-family: DM Sans;
         font-size: 20px;
         font-style: normal;
-        font-weight: 400;
         line-height: 26px;
       }
     }
-   
-   
    
    .header__logo{
     position: relative;
@@ -270,7 +266,6 @@ header{
                      position: relative;
                      
                      &::after{
-                      
                         z-index: -5;
                         content: "";
                         position: absolute;
@@ -283,7 +278,7 @@ header{
                         transform: translateX(-50%);
                         right: 0;
                         text-align: center;
-                        background: #000;
+                        background: $black-color;
                      }
                   } 
             }
@@ -309,8 +304,6 @@ header{
      
       .navbar {
          display: block;
-
-
        }
    }
 }
@@ -329,25 +322,17 @@ header{
             padding-top: 0px;
             padding-bottom: 0px; 
             .burger-list {
-              
                gap: 50px;
               
-             
                .burger-menu__item {
                  transform: translate(0%);
                  transition: transform 0.8s ease-in-out 0.2s;
                  a {
                    font-family: DM Sans;
                    font-size: 22px;
-                   font-style: normal;
-                   font-weight: 400;
                    line-height: 26px;
-                   
                  }
                  
-                
-                
-               
                }
              }
           }
@@ -363,12 +348,29 @@ header{
 
 @media (min-width: 2000px){
   header{
+    padding: 50px 150px;
+    .header__logo{
+      a{
+        gap: 30px;
+        img{
+          width: 80px;
+        }
+        .header__logo_text{
+          font-size: 35px;
+        }
+      }
+    }
     .header__nav{
       ul{
-        gap: 80px;
+        gap: 120px;
         .nav_links{
-          font-size: 25px;
+          font-size: 32px;
         }
+      }
+    }
+    .header__pic{
+      img{
+        width: 90px;
       }
     }
   }

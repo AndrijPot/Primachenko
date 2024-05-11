@@ -3,9 +3,6 @@
 @import '_base/tools';
 @import '_base/fonts';
 
-//preload
-@import './_home/preload';
-
 // Основні сторінки
 @import './_home/main';
 
@@ -26,11 +23,9 @@
   }
   @media (max-width: 770px){
     padding: 130px 80px 0;
-
   }
   @media (max-width: 500px){
     padding: 130px 55px 0;
-    
   }
 }
 
@@ -46,7 +41,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $placeholder-color;
+    background-color:  $privacy-color;
     border-radius: 20px;
     border: 3px solid $light-gray-color;
   }
@@ -62,7 +57,6 @@ input {
   top: 0;
   z-index: 0;
  height: 100%;
-
 }
 
 .left-bg{
@@ -71,5 +65,18 @@ input {
   top: 0;
   z-index: 0;
   height: 100%;
-  
+}
+
+#toggleButton{
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+  z-index: 4;
+  width: 90px;
+  height: 40px;
+  background: $blue-color;
+  border-radius: 20px;
+  border: none;
+  color: $white-color;
+  font-size: 12px;
 }

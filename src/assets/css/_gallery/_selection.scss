@@ -23,13 +23,12 @@
               
             }
             
-           
             .picture_name{
                 font-family: "Montserrat", sans-serif;
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 21.94px;
-                color: #1D1E26;
+                color: $dark-blue-color;
                 text-align: center;
             }
             
@@ -38,7 +37,7 @@
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 19.5px;
-                color: #1D1E26;
+                color: $dark-blue-color;
 
             }
         }
@@ -58,19 +57,19 @@
         width: 166px;
         height: 49px;
         border-radius: 15px;
-        border: 1px solid #447EF2;
+        border: 1px solid $blue-color;
         margin: 0 auto;
         
-        color: #447EF2;
+        color: $blue-color;
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
         font-weight: 500;
         line-height: 25px;
-        transition: all .4s ease-in-out;
+        transition: all $transition-time ease-in-out;
         cursor: pointer;
         &:hover{
-        background: #447EF2;
-        color: #fff;
+        background: $blue-color;
+        color: $white-color;
         transform: scale(1.1);
         }
         input{
