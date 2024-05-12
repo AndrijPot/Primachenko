@@ -39,9 +39,7 @@
         }
       
         
-        .bio_pic__float_mob{
-            display: none;
-        }
+       
     }
     
 }
@@ -78,7 +76,7 @@
           
             .bio_pic__float{
                 width: 250px;
-                margin: 0 0 5px 20px;
+                margin: 20px auto;
             }
         }
         
@@ -88,10 +86,8 @@
 @media (max-width: 620px){
     .biography{
         .bio_info{
+            
             .bio_pic__float{
-                display: none;
-            }
-            .bio_pic__float_mob{
                 display: block;
               margin: 0 auto 28px;
             }
@@ -124,7 +120,7 @@
                 margin: 0 0 10px 0;
             }
           
-            .bio_pic__float, .bio_pic__float_mob{
+            .bio_pic__float{
                 width: 220px;
             }
         }
@@ -168,9 +164,7 @@
                 width: 600px;
                
             }
-            .bio_pic__float_mob{
-                display: none;
-            }
+            
         }
     }
 }
