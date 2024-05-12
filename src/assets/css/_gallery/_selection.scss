@@ -59,19 +59,28 @@
         border-radius: 15px;
         border: 1px solid $blue-color;
         margin: 0 auto;
-        
-        color: $blue-color;
-        font-family: "Montserrat", sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 25px;
         transition: all $transition-time ease-in-out;
         cursor: pointer;
         &:hover{
-        background: $blue-color;
-        color: $white-color;
-        transform: scale(1.1);
+            background: $blue-color;
+            
+            transform: scale(1.1);
         }
+        p{
+            color: $blue-color;
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25px;
+            transition: all $transition-time ease-in-out;
+            width: 100%;
+            text-align: center;
+            &:hover{
+                color: $white-color;
+            }
+        }
+       
+       
         input{
             visibility: hidden;
             cursor: pointer;
@@ -144,7 +153,10 @@
         .gallery_button{
             width: 135px;
             height: 40px;
-            font-size: 15px;
+            p{
+                font-size: 15px;
+            }
+           
             input{
                 width: 135px;
                 height: 40px;
@@ -173,7 +185,10 @@
         .gallery_button{
             width: 435px;
             height: 80px;
-            font-size: 30px;
+            p{
+                font-size: 30px;
+            }
+          
             input{
                 width: 435px;
             height: 80px;
